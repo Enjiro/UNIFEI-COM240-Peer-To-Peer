@@ -1,0 +1,11 @@
+http://ieeexplore.ieee.org/abstract/document/919270/?reload=true
+http://ieeexplore.ieee.org/abstract/document/1354647/
+http://ieeexplore.ieee.org/abstract/document/1022237/
+http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=877629
+http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1665-64232015000100011&lang=pt
+
+
+Matéria P2P de harvard:
+https://www.eecs.harvard.edu/~mema/courses/cs264/cs264.html
+https://www.p2p.tu-darmstadt.de/teaching/winter-term-20112012/p2p-networks-lecture/
+
