@@ -120,13 +120,11 @@ Como visto nas seções anteriores, a utilização da arquitetura \textbf{P2P} p
 Dessa forma, é importante analisar quais serviços utilizam essa arquitetura, como se beneficiam de suas vantagens e como lidam com suas desvantagens. Isto é, dissecar sobre como as caracteristicas da arquitetura P2P são tratadas em cada caso de uso.
 \subsection{Napster}
 O \textbf{Napster} foi uma das primeiras aplicações de compartilhamento de arquivos, elaborada em Junho de 1999. O serviço permitia apenas o compartilhamento de arquivos \textbf{MP3} e é um grande responsável pela popularidade do termo "P2P".
-A rede se basea num servidor central de indices. Os nós da rede registram uma lista dos arquivos que desejam compartilhar. Dessa forma, a busca é processada baseando-se em \textbf{palavras chave} e retornará uma lista com os arquivos encontrados e informações como a banda disponivel, tamanho e fonte. 
-\begin{figure}[!h]
-\begin{center}
-  \includegraphics{img//ilustracaoiot.png} 
-  \caption{Protocolo Napster \cite{?} \label{figure1}}
-\end{center}
-\end{figure}
+\subsubsection{Funcionamento}
+A aplicação se basea num servidor central de indices. Os nós da rede registram uma lista dos arquivos que desejam compartilhar. Dessa forma, a busca é processada baseando-se em \textbf{palavras chave} e retornará uma lista com os arquivos encontrados e informações como a banda disponivel, tamanho e fonte. 
+
+\includegraphics[width=\linewidth\center]{img//ilustracaoiot.png}
+
 
 A imagem acima representa o funcionamento do protocolo Napster, indicando um cliente fazendo uma \textbf{consulta} ao servidor central, para que o servidor então busque os outros clientes que possuem tal arquivo. Em seguida, tais clientes se conectam ao requisitante, para transferir o arquivo.
 
