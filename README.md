@@ -5,4 +5,4 @@ Desenvolvido pelos alunos:
 - David Batista
 - Gabriel Erzinger
 - Gabriel Taets
-- Marcos Paulo
+- Marcos Paulo (Mauricio Leite)
