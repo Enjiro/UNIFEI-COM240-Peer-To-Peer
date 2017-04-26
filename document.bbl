@@ -1,3 +1,25 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{camarillop2parch}
+Gonzalo Camarillo.
+\newblock {Peer-to-Peer (P2P) Architecture: Definition, Taxonomies, Examples,
+  and Applicability}.
+\newblock {\em Internet Architecture Board}, 2009.
+
+\bibitem{roussopoulos2004}
+Mema Roussopoulos, Mary Baker, Giuli TJ, Petros Maniatis, David Rosenthal, and
+  Jeff Mogul.
+\newblock {Workshop on Peer-to-Peer Systems}.
+\newblock 2004.
+
+\bibitem{schollmeier2001}
+Rüdiger Schollmeier.
+\newblock {First International Conference on Peer-to-Peer Computing P2P '01}.
+\newblock 2001.
+
+\bibitem{sisp2p}
+Alberto Scremin, Barbara Herrera, Bianca Paixão, and Daniel Tamaki.
+\newblock \textit{Sistemas de redes peer to peer}.
+\newblock Universidade Federal Fluminense, 2007.
 
 \end{thebibliography}

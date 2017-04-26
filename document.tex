@@ -77,8 +77,8 @@
 %\hRule\\
 David Mateus Batista\\
 Gabriel Erzinger Dousseau\\
-Gabriel Alves Taets\\
-Mauricio Leite\\
+Gabriel Augusto Alves Taets\\
+Mauricio Ferreira Leite\\
 \end{flushleft}
 \end{minipage}
 \begin{minipage}{0.4\textwidth}
@@ -113,6 +113,40 @@ suas vantagens, desvantagens, limitações e aplicações.
 \newpage
 
 \section{Fundamentação Teórica}
+\textit{Peer-to-Peer} significa, em tradução literal, "par a par". Em termos formais, os dispositivos da rede estão conectados por uma cadeia descentralizada, onde cada um possui funções equivalentes, sem hierarquias. Todos os usuários são clientes e servidores, funcionando de forma independente e livre da existência de um servidor central. A busca por um arquivo é enviada a todos os dispositivos da rede, os quais tomam conhecimentos dos outros usuários através de um hospedeiro (que apenas monitora pontos de presença na rede e não tem um banco de dados com nomes de usuários ou arquivos), que informa o IP dos usuários ativos na rede. O pedido é repassado para todos os usuários, que vão passando, usuário por usuário, até que o arquivo desejado seja encontrado.\cite{sisp2p}
+
+É preciso notar que P2P e arquiteturas centralizadas não são alternativas disjuntas. Existem muitos sistemas que podem ser classificados como uma mistura de um sistema P2P e um sistema centralizado. O problema é que não existe uma fronteira clara entre um paradigma P2P e outros paradigmas supostamete opostos como cliente-servidor. Nos extremos, algumas arquiteturas são claramente P2P enquanto outras são claramente cliente-servidor. No entanto, existem arquiteturas que podem ser consideradas uma ou outra ou ambos, dependendo da definição de P2P considerada. Consequentemente, é importante entender o que é comum a todas as definições de P2P e o que são traços não-comuns que alguns autores incluem em suas próprias definições.\cite{camarillop2parch}
+
+Considera-se um sistema P2P se os elementos que formam o sistema compartilham seus recursos com o propósito de prover o serviço que o sistema foi desenhado para prover. Os elementos no sistema tanto provêem os serviços aos outros elementos, como requisitam os serviços aos outros elementos. A princípio, todos os elementos no sistema devem satisfazer este critério para que o sistema seja considerado P2P. No entanto, na prática, o sistema pode ter algumas exceções (isto é, alguns nós que não satisfazem este critério) e ainda ser considerado P2P. Por exemplo, um sistema P2P pode ainda ser considerado P2P mesmo se tiver um servidor centralizado de registros. Por outro lado, alguns sistemas dividem \textit{endpoints} entre pares e clientes. Pares requisitam e oferecem serviços, enquanto clientes geralmente apenas requisitam serviços. Um sistema onde a maioria dos \textit{endpoints} se comportam como clientes não pode ser considerado estritamente P2P. \cite{camarillop2parch}
+
+Alguns autores adicionam ainda que os elementos que foramm os sistemas P2P (que não surpreendentemente são denonimados \textit{pares}), devem ser capazes de se comunicarem diretamente, sem passar por intermediários \cite{schollmeier2001}. Outros autores dizem que o sistema deve ser auto-organizável e ter controle decentralizado\cite{roussopoulos2004}.
+
+É notável que as definições acima são dadas no contexto de um único serviço individual. Um serviço complexo pode ser composto de vários serviços individuais. Alguns desses serviços individuais pode consistir de serviços P2P e alguns deles podem consistir de serviços cliente-servidor. Por exemplo, um cliente de compartilhamento de arquivos pode incluir um cliente P2P para efetuar o compartilhamento em si, e um navegador \textit{web} para acessar informações adicionais num servidor \textit{web} centralizado. Adicionalmente, existem arquiteturas onde um sistema cliente-servidor pode servir como "estepe" para um serviço normalmente provido por um sistema P2P, ou vice-versa. \cite{camarillop2parch}
+
+Prover um serviço geralmente envolve processamento ou armazenamento de dados. De acordo com a definição de Camarillo, num sistema P2P, os pares compartilham suas capacidades de processamento e armazenamento (isto é, seus recursos de software e hardware), de forma que o sistema possa prover o serviço. Por exemplo, se o serviço a ser provido é um serivço de distribuição de arquivos, pares diferentes entre o sistema irão armazenar arquivos diferentes. Quando um certo par quer um arquivo em particular, primeiro ele deve descobrir qual par possui (ou quais pares possuem) o arquivo, e então obter o arquivo destes pares\cite{camarillop2parch}. Esta definição de P2P nos fornece um critério para decidir se um sistema é ou não P2P.
+
+
+\begin{figure}[!ht]
+\begin{center}
+  \includegraphics{img//cliente-servidor.png}
+  \caption{Esquema Cliente-Servidor}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+  \includegraphics{img//p2p.png}
+  \caption{Esquema P2P}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+  \includegraphics{img//misto.png}
+  \caption{Esquema Misto}
+\end{center}
+\end{figure}
+
 \newpage
 
 \section{Aplicações}
@@ -175,8 +209,9 @@ As outras desvantagens do Gnutella possuem origem nas desvantagens da própria a
 
 
 \newpage
-\bibliographystyle{apalike}
+\bibliographystyle{plain}
 
-\bibliography{bibliography}
+\bibliography{document}
+
 
 \end{document}
