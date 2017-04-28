@@ -11,16 +11,6 @@ Andrew~T. Campbell.
 \newblock \textit{Examples Peer-to-Peer Applications}.
 \newblock Departament of Computer Science - Darthmouth College.
 
-\bibitem{CohenBIT}
-Bram Cohen.
-\newblock Incentives build robustness in bittorrent.
-\newblock {\em Workshop on Economics of Peer-to-Peer Systems, Berkeley, USA},
-  2003.
-
-\bibitem{pouwelsebit}
-J.A Powelse, P.~Garbacki, and H.J.~Sips D.H.J~Epema.
-\newblock The bittorrent p2p file-sharing system: measurements and analysis.
-
 \bibitem{roussopoulos2004}
 Mema Roussopoulos, Mary Baker, Giuli TJ, Petros Maniatis, David Rosenthal, and
   Jeff Mogul.
@@ -37,9 +27,9 @@ Alberto Scremin, Barbara Herrera, Bianca Paixão, and Daniel Tamaki.
 \newblock \textit{Sistemas de redes peer to peer}.
 \newblock Universidade Federal Fluminense, 2007.
 
-\bibitem{gayatriGN}
-Gayatri Tribhuvan.
-\newblock A brief introduction and analysis of the gnutella protocol.
+\bibitem{gnutella}
+Tor Klingberg, Raphael Manfredi.
+\newblock {{Gnutella 0.6 documentation}}.
 
 \bibitem{howstuffworks}
 Jeff Tyson.

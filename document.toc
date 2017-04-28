@@ -7,6 +7,10 @@
 \contentsline {subsection}{\numberline {3.2}Gnutella}{6}
 \contentsline {subsubsection}{\numberline {3.2.1}Mecanismo de Busca}{7}
 \contentsline {subsubsection}{\numberline {3.2.2}Vantagens e Desvantagens}{7}
-\contentsline {section}{\numberline {4}Discuss\IeC {\~a}o}{8}
-\contentsline {section}{\numberline {5}Considera\IeC {\c c}\IeC {\~o}es finais}{9}
-\contentsline {section}{Refer\^encias}{10}
+\contentsline {subsection}{\numberline {3.3}BitTorrent}{7}
+\contentsline {subsubsection}{\numberline {3.3.1}Funcionamento}{8}
+\contentsline {subsubsection}{\numberline {3.3.2}Sistema de Busca}{9}
+\contentsline {subsubsection}{\numberline {3.3.3}Vantagens e Desvantagens}{9}
+\contentsline {section}{\numberline {4}Discuss\IeC {\~a}o}{10}
+\contentsline {section}{\numberline {5}Considera\IeC {\c c}\IeC {\~o}es finais}{11}
+\contentsline {section}{Refer\^encias}{12}

@@ -150,44 +150,49 @@ Prover um serviço geralmente envolve processamento ou armazenamento de dados. D
 \newpage
 
 \section{Aplicações}
-Como visto nas seções anteriores, a utilização da arquitetura \textbf{P2P} pode trazer diversas vantagens, desvantagens e outras características únicas para o aplicativo ( ou serviço ) que estará implementando-a. \\
+Como visto nas seções anteriores, a utilização da arquitetura \textbf{P2P} pode trazer diversas vantagens, desvantagens e outras características únicas para o aplicativo ( ou serviço ) que estará implementando-a. 
+
 Dessa forma, é importante analisar quais serviços utilizam essa arquitetura, como se beneficiam de suas vantagens e como lidam com suas desvantagens. Isto é, dissecar sobre como as caracteristicas da arquitetura P2P são tratadas em cada caso de uso.
 \subsection{Napster}
 O \textbf{Napster} foi uma das primeiras aplicações de compartilhamento de arquivos, elaborada em Junho de 1999. O serviço permitia apenas o compartilhamento de arquivos \textbf{MP3} e é um grande responsável pela popularidade do termo "P2P".
+
 A rede se basea num servidor central de indices. Os nós da rede registram uma lista dos arquivos que desejam compartilhar. Dessa forma, a busca é processada baseando-se em \textbf{palavras chave} e retornará uma lista com os arquivos encontrados e informações como a banda disponivel, tamanho e fonte. 
+
 \begin{figure}[!h]
 \begin{center}
   \includegraphics{img//ilustracaoiot.png} 
-  \caption{Protocolo Napster \cite{?} \label{figure1}}
+  \caption{Protocolo Napster \cite{howstuffworks} \label{figure1}}
 \end{center}
 \end{figure}
 
 A imagem acima representa o funcionamento do protocolo Napster, indicando um cliente fazendo uma \textbf{consulta} ao servidor central, para que o servidor então busque os outros clientes que possuem tal arquivo. Em seguida, tais clientes se conectam ao requisitante, para transferir o arquivo.
 
 \subsubsection{Vantagens e Desvantagens}
-Como um dos pioneiros na área, a principal vantagem do Napster se devia ao fato de ele possuir uma busca rápida e eficiente ( por se tratar apenas de uma consulta ao servidor central ). Além disso, oferecia uma visão simples e consistente da rede. \
-As desvantagens se devem exatamente a \textbf{presença de um servidor}, uma vez que, assim como em arquiteturas cliente-servidor, a central representa um ponto de falha único, que se fosse afetado, prejudicaria toda a rede. Por se tratar de um servidor que lida com diversas requisições, o servidor central também possuia um alto custo de manutenção.
+Como um dos pioneiros na área, a principal vantagem do Napster se devia ao fato de ele possuir uma busca rápida e eficiente ( por se tratar apenas de uma consulta ao servidor central ). Além disso, oferecia uma visão simples e consistente da rede. 
 
+As desvantagens se devem exatamente a \textbf{presença de um servidor}, uma vez que, assim como em arquiteturas cliente-servidor, a central representa um ponto de falha único, que se fosse afetado, prejudicaria toda a rede. Por se tratar de um servidor que lida com diversas requisições, o servidor central também possuia um alto custo de manutenção.
 \subsection{Gnutella} %https://pdfs.semanticscholar.org/f0b5/86bda8901c2f3ae399b48239690028f69417.pdf
 %https://pt.slideshare.net/uschmidt/peertopeer-systems/7-P2P_Filesharing_The_most_popular
-Gnutella é um \textbf{protocolo de busca} aberto e descentralizado usado principalmente para o compartilhamento e a busca de arquivos. Foi criado com o objetivo de ser uma rede dinamica que permite que seus usúarios entrem e saiam a qualquer momento, tenha uma boa escalabilidade, garanta a anonimidade  e confiança em relação a ataques externos. \\
-O termo Gnutella se refere a todo o grupo de computadores que possuem aplicativos carregados com o protocolo Gnutella que formam uma espécie de rede virtual. Cada nó nessa rede pode funcionar tanto como um cliente como quanto um servidor. \\
-Dessa forma, eles podem criar e receber requisições com outros nós utilizando os dados que estarão em seu disco rígido. Como é sábido, tais requisições não são enviados para nenhum servidor central, elas são exclusivamente tratadas entre os nós da rede.
+Gnutella é um \textbf{protocolo de busca} aberto e descentralizado usado principalmente para o compartilhamento e a busca de arquivos. Foi criado com o objetivo de ser uma rede dinamica que permite que seus usúarios entrem e saiam a qualquer momento, tenha uma boa escalabilidade, garanta a anonimidade  e confiança em relação a ataques externos.\cite{gayatriGN}
 
+O termo Gnutella se refere a todo o grupo de computadores que possuem aplicativos carregados com o protocolo Gnutella que formam uma espécie de rede virtual. Cada nó nessa rede pode funcionar tanto como um cliente como quanto um servidor. 
+
+Dessa forma, eles podem criar e receber requisições com outros nós utilizando os dados que estarão em seu disco rígido. Como é sábido, tais requisições não são enviados para nenhum servidor central, elas são exclusivamente tratadas entre os nós da rede. 
 
 \begin{figure}[!h]
 \begin{center}
   \includegraphics{img//gnuquery.JPG} 
-  \caption{Protocolo Gnutella \cite{?} \label{figure1}}
+  \caption{Protocolo Gnutella \cite{examplesofp2p} \label{figure1}}
 \end{center}
 \end{figure}
 
-A imagem acima, representa um grupo de computadores utilizando aplicativos com o protocolo Gnutella. Na mesma, um computador realiza uma \textbf{query} buscando um arquivo nos nós da rede. Os computadores que possuirem tal arquivo, retornam um \textbf{Query hit} para que, em seguida, seja estabelecida uma conexão \textbf{HTTP} entre eles para a transmissão do arquivo. \\
+
+A imagem acima, representa um grupo de computadores utilizando aplicativos com o protocolo Gnutella. Na mesma, um computador realiza uma \textbf{query} buscando um arquivo nos nós da rede. Os computadores que possuirem tal arquivo, retornam um \textbf{Query hit} para que, em seguida, seja estabelecida uma conexão \textbf{HTTP} entre eles para a transmissão do arquivo. 
 
 
 
 \subsubsection{Mecanismo de Busca}
-O protocolo utiliza o algoritmo padrão conhecido como BFS( \textbf{B}readth \textbf{F}irst \textbf{S}earch) - Busca em Largura - portanto, tal qual o algoritmo é utilizado em grafos, ele será utilizado na rede de aplicativos que utilizam o protocolo:
+O protocolo utiliza o algoritmo padrão conhecido como BFS( \textbf{B}readth \textbf{F}irst \textbf{S}earch) - Busca em Largura - portanto, tal qual o algoritmo é utilizado em grafos, ele será utilizado na rede de aplicativos que utilizam o protocolo:\cite{gayatriGN}
 \begin{itemize}
 	\item O nó inicialmente busca um arquivo e envia a mensagem de busca a seus vizinhos
 	\item Os vizinhos encaminham a mensagem para todos os seus vizinhos
@@ -195,9 +200,39 @@ O protocolo utiliza o algoritmo padrão conhecido como BFS( \textbf{B}readth \te
 	item Após a mensagem de resposta atingir o nó origem, o download do arquivo começa.
 \end{itemize}
 \subsubsection{Vantagens e Desvantagens}
-O protocolo GNutella apresenta algumas modificações que \textbf{superam} as desvantagens do Napster, como por exemplo: não depender de um servidor para indexar os arquivos, dessa forma, não se cria um "único ponto de falha" na arquitetura. Entretanto, este mesmo fato causa uma das suas principais desvantagens: a busca em largura acaba por adicionar um certo periodo de tempo bem maior do que se fosse utilizado um servidor. \newline
-As outras desvantagens do Gnutella possuem origem nas desvantagens da própria arquitetura P2P :  segurança, poucos usúarios servindo arquivos e perca de banda.
+O protocolo GNutella apresenta algumas modificações que \textbf{superam} as desvantagens do Napster, como por exemplo: não depender de um servidor para indexar os arquivos, dessa forma, não se cria um "único ponto de falha" na arquitetura. Entretanto, este mesmo fato causa uma das suas principais desvantagens: a busca em largura acaba por adicionar um certo periodo de tempo bem maior do que se fosse utilizado um servidor.
 
+Além disso, outros pontos de falha do protocolo Gnutella são: o fato de que metade dos arquivos são servidos por apenas 1 porcento dos usuário , além da perca de banda larga e segurança em relação a transmissão de arquivos mascarados.\cite{gayatriGN}
+
+\subsection{BitTorrent}
+Apesar de muitos sistemas de compartilhamento de arquivos terem sido propostos e implementados, poucos persistirão ao teste intensivo de uma grande quantidade de usuários diários. O \textbf{BitTorrent} é um destes sistemas que, além de persistir, evoluiu como uma das mais populares redes da internet. De fato, a pesquisa \textbf{The True Picture of Peer-to-Peer File sharing} indica que, em Junho de 2004, o sistema era responsável por mais da metade de todo o tráfico P2P do mundo. \cite{pouwelsebit}. Dessa forma, nesta monografia, citamos o sistema BitTorrent como representante das demais aplicações de torrents que funcionam de forma parecida, porém que não alcancaram o a mesma difusão e boa performance.
+
+Diferente do que visto anteriormente, o BitTorrent é apenas um protocolo de download de arquivos, de forma que dependa de outros serviços ou websites para fazer a busca destes arquivos\cite{pouwelsebit, CohenBIT}.
+
+\subsubsection{Funcionamento}
+
+O sistema funciona dividindo um arquivo em partes menores, dessa forma, ao se executar o download do arquivo, o usúario ao mesmo tempo realiza o upload de uma \textbf{parte} do arquivo que ele já possui, para outros usúarios que ainda não possuem esta parte. Todo este funcionamento é gerenciado de forma a otimizar a taxa de download e upload. 
+
+Um usuário com uma alta taxa de upload, tem uma chance maior de possuir também uma alta taxa de download, o que funciona como um incentivo para que os usúarios contribuam com a rede. Quando um usúario finaliza o download de um arquivo, ele permanece como uma semente, executando apenas o upload deste arquivo, para colaborar com a rede. \cite{CohenBIT}
+
+Para se publicar um arquivo utilizando tal sistema, primeiro um arquivo estatico $.torrent$ é adicionado a qualquer servidor web para que os usuários o encontrem. Este arquivo contem informações como o tamanho, nome, hash e a url de um $tracker$.  Estes trackers são responsáveis por fazer com que os usúarios da rede se ``encontrem''.  Para dar inicio, basta então, que um usúario que contenha o arquivo em sua totalidade inicie o arquivo $.torrent$ utilizando o BitTorrent para que ele se torne uma $semente$. Dessa forma, outros usúarios que abrirem o arquivo .torrent irão receber partes do arquivo total, semeadas pelo primeiro usúario. A medida que forem executando o download, eles também irão semear partes para outros usuários.\cite{CohenBIT}
+
+A maior parte dos problemas de sistemas de compartilhamento P2P reside na interação entre peers. Para ter conhecimento de qual usúario tem o que, o BitTorrent particiona o arquivo em pedaços de tamanho fixo, usualmente de $\frac{1}{4}$ de megabyte. Cada usuário então reporta para seus pares qual parte do arquivo ele possui. Para garantir a integridade do dado, o arquivo $.torrent$ possui a função criptográfica hash de todas as partes e um peer só reporta posuir uma parte após assegurar que possui o hash correto da mesma.\cite{CohenBIT}
+
+Em seguida, é necessário então, entender o como o BitTorrent seleciona em qual ordem as partes do arquivo devem ser requisitadas para a rede, de forma a otimizar a performance do sistema. Para fazer tal escolha, existem diversos algoritmos utilizados no sistema. Os algoritmos podem por exemplo, buscar primeiro completar partes maiores do arquivo, buscar primeiro as partes mais raras do arquivo ( esse método é útil pois estas partes possivelmente irão ter uma velocidade de download menor, portanto, começando antes, elas tendem a terminar junto com o arquivo como um todo ) e, para decidir qual parte do arquivo irá começar o download, o algoritmo realiza uma escolha aleatória, uma vez que a escolha da primeira parte não irá impactar tanto no processo como um todo.\cite{CohenBIT}  
+\subsubsection{Sistema de Busca}
+A busca dos arquivos $.torrent$ é realizada de forma separada do sistema de download, não estando relacionada necessariamente ao BitTorrent, porém, como é a base para muitos outros sistemas P2P, é importante ser discutida.
+
+Ela ocorre em sites que indexam os arquivos a partir de seus nomes, tamanho e número de pares conectados. Tais sites fornecem \textbf{links magnéticos} para a aplicação utilizada (BitTorrent por exemplo) se conectar com os pares que possuem as partes do arquivo. 
+
+\subsubsection{Vantagens e Desvantagens}
+Como observado, uma das maiores vantagens do BitTorrent associado com um site de bsuca de arquivos .torrent é o alto nível da integridade do arquivo, devido ao fato de que todas as partes são averiguadas através do hash\cite{CohenBIT}.
+
+Além disso, a velocidade de download por sistemas como o BitTorrent costuma ser bem maior para um grande número de usúarios, devido a auto-escalabilidade padrão dos sistemas P2P: de acordo com o aumento do número de usúarios na rede, o número de sementes aumenta de forma proporcional, pois mais usúarios possuirão partes de arquivos diferentes para compartilhar.\cite{pouwelsebit}
+
+Surge também uma problemática relacionada aos sites que armazenam os arquivos $.torrent$, uma vez que grande parte destes sites são responsáveis pela pirataria de diversos programas, músicas, filmes e outras mídias, aproveitando-se da $semi-anonimidade$ oferecida pelos sistemas de torrent. Entretanto, não é uma desvantagem que concerne ao sistema BitTorrent em sí mas que o acaba afetando.
+
+Os maiores desafios para aplicações como o BitTorrent continuam sendo os mesmos nos ultimos tempos: aumentar o incentivo para que usuários se comportem como sementes após a finalização do download do arquivo para que a rede se torne maior e mais consistente,  e otimizar a largura de banda dos trackers, para que os pares se encontrem mais rapidamnete.
 
 \newpage
 
