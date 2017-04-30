@@ -119,33 +119,36 @@ suas vantagens, desvantagens, limitações e aplicações.
 
 Considera-se um sistema P2P se os elementos que formam o sistema compartilham seus recursos com o propósito de prover o serviço que o sistema foi desenhado para prover. Os elementos no sistema tanto provêem os serviços aos outros elementos, como requisitam os serviços aos outros elementos. A princípio, todos os elementos no sistema devem satisfazer este critério para que o sistema seja considerado P2P. No entanto, na prática, o sistema pode ter algumas exceções (isto é, alguns nós que não satisfazem este critério) e ainda ser considerado P2P. Por exemplo, um sistema P2P pode ainda ser considerado P2P mesmo se tiver um servidor centralizado de registros. Por outro lado, alguns sistemas dividem \textit{endpoints} entre pares e clientes. Pares requisitam e oferecem serviços, enquanto clientes geralmente apenas requisitam serviços. Um sistema onde a maioria dos \textit{endpoints} se comportam como clientes não pode ser considerado estritamente P2P. \cite{camarillop2parch}
 
-Alguns autores adicionam ainda que os elementos que foramm os sistemas P2P (que não surpreendentemente são denonimados \textit{pares}), devem ser capazes de se comunicarem diretamente, sem passar por intermediários \cite{schollmeier2001}. Outros autores dizem que o sistema deve ser auto-organizável e ter controle decentralizado\cite{roussopoulos2004}.
+Alguns autores adicionam ainda que os elementos que formam os sistemas P2P (que não surpreendentemente são denonimados \textit{pares}), devem ser capazes de se comunicarem diretamente, sem passar por intermediários \cite{schollmeier2001}. Outros autores dizem que o sistema deve ser auto-organizável e ter controle decentralizado\cite{roussopoulos2004}.
 
 É notável que as definições acima são dadas no contexto de um único serviço individual. Um serviço complexo pode ser composto de vários serviços individuais. Alguns desses serviços individuais pode consistir de serviços P2P e alguns deles podem consistir de serviços cliente-servidor. Por exemplo, um cliente de compartilhamento de arquivos pode incluir um cliente P2P para efetuar o compartilhamento em si, e um navegador \textit{web} para acessar informações adicionais num servidor \textit{web} centralizado. Adicionalmente, existem arquiteturas onde um sistema cliente-servidor pode servir como "estepe" para um serviço normalmente provido por um sistema P2P, ou vice-versa. \cite{camarillop2parch}
 
 Prover um serviço geralmente envolve processamento ou armazenamento de dados. De acordo com a definição de Camarillo, num sistema P2P, os pares compartilham suas capacidades de processamento e armazenamento (isto é, seus recursos de software e hardware), de forma que o sistema possa prover o serviço. Por exemplo, se o serviço a ser provido é um serivço de distribuição de arquivos, pares diferentes entre o sistema irão armazenar arquivos diferentes. Quando um certo par quer um arquivo em particular, primeiro ele deve descobrir qual par possui (ou quais pares possuem) o arquivo, e então obter o arquivo destes pares\cite{camarillop2parch}. Esta definição de P2P nos fornece um critério para decidir se um sistema é ou não P2P.
 
 
-\begin{figure}[!ht]
+\begin{figure}[!hb]
 \begin{center}
   \includegraphics{img//cliente-servidor.png}
   \caption{Esquema Cliente-Servidor\cite{sisp2p}} 
 \end{center}
 \end{figure}
+A imagem acima representa um sistema cliente-servidor, onde o nó central é o servidor, e ele responde as requisições de todos os clientes.
 
-\begin{figure}
+\begin{figure} [!ht]
 \begin{center}
   \includegraphics{img//p2p.png}
   \caption{Esquema P2P \cite{sisp2p}} 
 \end{center}
 \end{figure}
+A imagem acima representa um sistema P2P, onde todos os nós são ligados a todos os nós, e as requisições podem ser feitas e respondidas por qualquer nó.
 
-\begin{figure}
+\begin{figure} [!ht]
 \begin{center}
   \includegraphics{img//misto.png}
   \caption{Esquema Misto \cite{sisp2p}} 
 \end{center}
 \end{figure}
+A imagem acima representa um esquema misto, onde existe um servidor centralizado que recebe as requisições e direciona a requisição para um nó que possa respondê-la.
 
 \newpage
 
