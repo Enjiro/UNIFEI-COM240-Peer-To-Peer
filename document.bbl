@@ -36,6 +36,11 @@ Cisco VNI Global IP~Traffic Forecast.
 Paul Frazee.
 \newblock \textit{What is the P2P Web?}, 2016.
 
+\bibitem{Kurose}
+James~F. Kurose and Keith~W. Ross.
+\newblock {\em Redes de computadores e a internet}.
+\newblock Pearson, 2013.
+
 \bibitem{pouwelsebit}
 J.A Powelse, P.~Garbacki, and H.J.~Sips D.H.J~Epema.
 \newblock The bittorrent p2p file-sharing system: measurements and analysis.

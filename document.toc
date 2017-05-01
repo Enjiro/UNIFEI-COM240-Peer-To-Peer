@@ -1,25 +1,25 @@
 \select@language {brazilian}
 \contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}
 \contentsline {section}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{1}
-\contentsline {section}{\numberline {3}Aplica\IeC {\c c}\IeC {\~o}es}{4}
-\contentsline {subsection}{\numberline {3.1}Napster}{4}
-\contentsline {subsubsection}{\numberline {3.1.1}Vantagens e Desvantagens}{4}
-\contentsline {subsection}{\numberline {3.2}Gnutella}{4}
-\contentsline {subsubsection}{\numberline {3.2.1}Mecanismo de Busca}{5}
-\contentsline {subsubsection}{\numberline {3.2.2}Vantagens e Desvantagens}{6}
-\contentsline {subsection}{\numberline {3.3}BitTorrent}{6}
-\contentsline {subsubsection}{\numberline {3.3.1}Funcionamento}{7}
-\contentsline {subsubsection}{\numberline {3.3.2}Sistema de Busca}{8}
-\contentsline {subsubsection}{\numberline {3.3.3}Vantagens e Desvantagens}{8}
-\contentsline {subsection}{\numberline {3.4}P2P Web}{9}
-\contentsline {section}{\numberline {4}Discuss\IeC {\~a}o}{9}
-\contentsline {subsection}{\numberline {4.1}Vantagens}{9}
-\contentsline {subsubsection}{\numberline {4.1.1}Auto-Escalabilidade}{9}
-\contentsline {subsubsection}{\numberline {4.1.2}Auto-Organiza\IeC {\c c}\IeC {\~a}o}{10}
-\contentsline {subsubsection}{\numberline {4.1.3}Toler\IeC {\^a}ncia a falhas}{10}
-\contentsline {subsection}{\numberline {4.2}Desvantagens}{10}
-\contentsline {subsubsection}{\numberline {4.2.1}Integridade dos Dados}{10}
-\contentsline {subsubsection}{\numberline {4.2.2}Desaparecimento da Rede}{11}
-\contentsline {subsection}{\numberline {4.3}Exploit no BitTorrent}{11}
+\contentsline {section}{\numberline {3}Discuss\IeC {\~a}o}{4}
+\contentsline {subsection}{\numberline {3.1}Vantagens}{4}
+\contentsline {subsubsection}{\numberline {3.1.1}Auto-Escalabilidade}{4}
+\contentsline {subsubsection}{\numberline {3.1.2}Auto-Organiza\IeC {\c c}\IeC {\~a}o}{5}
+\contentsline {subsubsection}{\numberline {3.1.3}Toler\IeC {\^a}ncia a falhas}{5}
+\contentsline {subsection}{\numberline {3.2}Desvantagens}{5}
+\contentsline {subsubsection}{\numberline {3.2.1}Integridade dos Dados}{5}
+\contentsline {subsubsection}{\numberline {3.2.2}Desaparecimento da Rede}{5}
+\contentsline {subsection}{\numberline {3.3}Exploit no BitTorrent}{6}
+\contentsline {section}{\numberline {4}Aplica\IeC {\c c}\IeC {\~o}es}{6}
+\contentsline {subsection}{\numberline {4.1}Napster}{6}
+\contentsline {subsubsection}{\numberline {4.1.1}Vantagens e Desvantagens}{6}
+\contentsline {subsection}{\numberline {4.2}Gnutella}{7}
+\contentsline {subsubsection}{\numberline {4.2.1}Mecanismo de Busca}{8}
+\contentsline {subsubsection}{\numberline {4.2.2}Vantagens e Desvantagens}{8}
+\contentsline {subsection}{\numberline {4.3}BitTorrent}{8}
+\contentsline {subsubsection}{\numberline {4.3.1}Funcionamento}{9}
+\contentsline {subsubsection}{\numberline {4.3.2}Sistema de Busca}{10}
+\contentsline {subsubsection}{\numberline {4.3.3}Vantagens e Desvantagens}{10}
+\contentsline {subsection}{\numberline {4.4}P2P Web}{11}
 \contentsline {section}{\numberline {5}Considera\IeC {\c c}\IeC {\~o}es finais}{11}
 \contentsline {section}{Refer\^encias}{11}

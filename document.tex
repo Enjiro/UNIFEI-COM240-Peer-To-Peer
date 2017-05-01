@@ -147,6 +147,40 @@ A imagem acima representa um sistema P2P, onde todos os nós são ligados a todo
 \end{figure}
 A imagem acima representa um esquema misto, onde existe um servidor centralizado que recebe as requisições e direciona a requisição para um nó que possa respondê-la.
 
+\section{Discussão}
+Na seção anterior foi explicado sobre alguns exemplos de aplicações que utilizam a arquitetura P2P, e suas vantagens e desvantagens particulares, faremos agora uma analise mais geral sobre a arquitetura em sí, com suas principais vantagens e desvantagens.
+
+\subsection{Vantagens}
+As vantagens obtidas ao se utilizar uma arquitetura P2P abrangem desde não existe a necessidade de um servidor dedicado, o custo total para se construir e fazer a manutenção necessária para este tipo de rede é bem menor, até a existência de uma dependência central, a arquitetura P2P é mais confiável, pois a queda de um par não afeta diretamente os outros pares.
+
+\subsubsection{Auto-Escalabilidade}
+A rede cresce de acordo com o aumento dos provedores e consumidores inseridos nela, um alto numero de somente provedores ou consumidores na rede não traz vantagem nenhuma a mesma, visto que com um alto numero somente de consumidores haverá um gargalo pelo qual os provedores não serão capazes de atender, já com um aumento somente nos provedores a rede haverá um aumento no custo para um esforço aparentemente sem utilidade.\cite{ACohenBAD}
+
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[scale=0.5]{img//p2p_distribution_time.png} 
+		\caption{Comparação no tempo de distribuição entre cliente-servidor e P2P \cite{Kurose}}
+	\end{center}
+\end{figure}
+
+\subsubsection{Auto-Organização}
+Com a inserção de um novo par na rede, requer uma mínima ou quase nenhuma configuração para ela começar a se comunicar com os outros pares já presentes na rede,\cite{ACohenBAD}
+
+\subsubsection{Tolerância a falhas} 
+Servidores centrais são alvos de ataques de hackers com uma alta frequência, como eles aderem a um modelo em que todos os dados estão centralizados em um centro de dados central. No caso de um evento (ciberataque ou desastre natural) que traga o servidor a ter um mal funcionamento, os usuários não teriam mais acesso aos dados dos provedores. Já, observando esses eventos em uma rede P2P, após o "provedor" presente na rede cair (sendo o provedor um dos pares presentes na rede), os dados buscados na rede continuariam sendo acessíveis a partir de outro par, visto que nenhum nó na rede é crítico para que ela continue operando.\cite{ACohenBAD}
+
+\subsection{Desvantagens}
+Observando as vantagens apresentadas anteriormente, temos algumas consequências que podem afetar tanto a segurança do usuário, como a do dado presente na rede.
+
+\subsubsection{Integridade dos Dados}
+Através de um modelo P2P, existem inúmeras ocasiões em que os dados são filtrados, já que não existe um administrador central para essa arquitetura. Isso ocorre também com dados nocivos como modelos 3D de munições e armas. O mais comum é isso ocorrer com dados que violam os direitos autorias de multimídia. Esses exemplos abrangem os casos em que os dados realmente contém as informações que são marcados. Um outro problema é quando os dados são intencionalmente mal rotulados por um dos pares, por exemplo um dos pares substitui os dados que um consumidor estava buscando por um vírus, mas mantém o rótulo dos dados buscados, causando assim o descarregamento de um vírus no consumidor.
+
+\subsubsection{Desaparecimento da Rede}
+Como a transmissão de arquivos ficam somente para os pares na rede, quando um par é o único na rede a possuir um arquivo e ele não está mais presente na mesma, existe uma defasagem do arquivo necessitado, e caso o par não volte a rede, o arquivo em questão pode não ser mais encontrado quando solicitado futuramente.
+
+\subsection{Exploit no BitTorrent}
+Um dos mais populares protocolos P2P para compartilhamento de arquivos possui um exploit no qual se pode lançar um ataque DRDoS, visto que o BitTorrent faz uso do protocolo UDP, o qual não inclui mecanismos para evitar a falsificação do endereço de origem IP.\cite{BitExploit}
+
 \section{Aplicações}
 Como visto nas seções anteriores, a utilização da arquitetura \textbf{P2P} pode trazer diversas vantagens, desvantagens e outras características únicas para o aplicativo ( ou serviço ) que estará implementando-a. 
 
@@ -247,33 +281,6 @@ Sites P2P são auto-publicados, cada usuário tem seu próprio domínio, identif
 Os sites P2P incluem tudo o que precisam para executar o aplicativo. As APIs podem ler e escrever conteúdo sem depender de um host remoto. Se um serviço for necessário, seu endpoint estará sujeito à intervenção do usuário (e reconfiguração).\cite{paul2016}
 
 Tais propriedades levam a um dos recursos mais poderosos do P2P Web: \textit{forkability}. Qualquer site pode ser duplicado com um clique. Todo site duplicado recebe uma URL global automaticamente e eh servido a partir da máquina do autor. Isso é como possuir um sistema de controle de versão (como o Github) e um servidor (como o Apache) construído no próprio navegador. \cite{paul2016}
-
-\section{Discussão}
-Na seção anterior foi explicado sobre alguns exemplos de aplicações que utilizam a arquitetura P2P, e suas vantagens e desvantagens particulares, faremos agora uma analise mais geral sobre a arquitetura em sí, com suas principais vantagens e desvantagens.
-
-\subsection{Vantagens}
-As vantagens obtidas ao se utilizar uma arquitetura P2P abrangem desde não existe a necessidade de um servidor dedicado, o custo total para se construir e fazer a manutenção necessária para este tipo de rede é bem menor, até a existência de uma dependência central, a arquitetura P2P é mais confiável, pois a queda de um par não afeta diretamente os outros pares.
-
-\subsubsection{Auto-Escalabilidade}
-A rede cresce de acordo com o aumento dos provedores e consumidores inseridos nela, um alto numero de somente provedores ou consumidores na rede não traz vantagem nenhuma a mesma, visto que com um alto numero somente de consumidores haverá um gargalo pelo qual os provedores não serão capazes de atender, já com um aumento somente nos provedores a rede haverá um aumento no custo para um esforço aparentemente sem utilidade.\cite{ACohenBAD}
-
-\subsubsection{Auto-Organização}
-Com a inserção de um novo par na rede, requer uma mínima ou quase nenhuma configuração para ela começar a se comunicar com os outros pares já presentes na rede,\cite{ACohenBAD}
-
-\subsubsection{Tolerância a falhas} 
-Servidores centrais são alvos de ataques de hackers com uma alta frequência, como eles aderem a um modelo em que todos os dados estão centralizados em um centro de dados central. No caso de um evento (cyberataque ou desastre natural) que traga o servidor a ter um mal funcionamento, os usuários não teriam mais acesso aos dados dos provedores. Já, observando esses eventos em uma rede P2P, após o "provedor" presente na rede cair (sendo o provedor um dos pares presentes na rede), os dados buscados na rede continuariam sendo acessíveis a partir de outro par, visto que nenhum nó na rede é crítico para que ela continue operando.\cite{ACohenBAD}
-
-\subsection{Desvantagens}
-Observando as vantagens apresentadas anteriormente, temos algumas consequências que podem afetar tanto a segurança do usuário, como a do dado presente na rede.
-
-\subsubsection{Integridade dos Dados}
-Através de um modelo P2P, existem inúmeras ocasiões em que os dados são filtrados, já que não existe um administrador central para essa arquitetura. Isso ocorre também com dados nocivos como modelos 3D de munições e armas. O mais comum é isso ocorrer com dados que violam os direitos autorias de multimídia. Esses exemplos abrangem os casos em que os dados realmente contém as informações que são marcados. Um outro problema é quando os dados são intencionalmente mal rotulados por um dos pares, por exemplo um dos pares substitui os dados que um consumidor estava buscando por um vírus, mas mantém o rótulo dos dados buscados, causando assim o descarregamento de um vírus no consumidor.
-
-\subsubsection{Desaparecimento da Rede}
-Como a transmissão de arquivos ficam somente para os pares na rede, quando um par é o único na rede a possuir um arquivo e ele não está mais presente na mesma, existe uma defasagem do arquivo necessitado, e caso o par não volte a rede, o arquivo em questão pode não ser mais encontrado quando solicitado futuramente.
-
-\subsection{Exploit no BitTorrent}
-Um dos mais populares protocolos P2P para compartilhamento de arquivos possui um exploit no qual se pode lançar um ataque DRDoS, visto que o BitTorrent faz uso do protocolo UDP, o qual não inclui mecanismos para evitar a falsificação do endereço de origem IP.\cite{BitExploit}
 
 \section{Considerações finais}
 Com sua auto-escalabilidade e liberdade de uso, o P2P se trata de uma tecnologia muito importante para o compartilhamento de dados na atualidade.
