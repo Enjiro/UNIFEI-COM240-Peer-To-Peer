@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: document.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: document.aux
 The style file: plain.bst
 Database file #1: document.bib
 Warning--empty journal in BitExploit
@@ -10,4 +12,45 @@ Warning--empty booktitle in roussopoulos2004
 Warning--empty booktitle in schollmeier2001
 Warning--empty journal in gayatriGN
 Warning--empty year in gayatriGN
+You've used 14 entries,
+            2118 wiz_defined-function locations,
+            561 strings with 5866 characters,
+and the built_in function-call counts, 3381 in all, are:
+= -- 294
+> -- 173
+< -- 0
++ -- 72
+- -- 56
+* -- 170
+:= -- 602
+add.period$ -- 38
+call.type$ -- 14
+change.case$ -- 69
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 133
+empty$ -- 287
+format.name$ -- 56
+if$ -- 685
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 10
+newline$ -- 69
+num.names$ -- 28
+pop$ -- 119
+preamble$ -- 1
+purify$ -- 56
+quote$ -- 0
+skip$ -- 98
+stack$ -- 0
+substring$ -- 72
+swap$ -- 10
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 54
+warning$ -- 9
+while$ -- 28
+width$ -- 16
+write$ -- 125
 (There were 9 warnings)

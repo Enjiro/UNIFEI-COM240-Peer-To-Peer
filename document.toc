@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {3.3}Exploit no BitTorrent}{6}
 \contentsline {section}{\numberline {4}Aplica\IeC {\c c}\IeC {\~o}es}{6}
 \contentsline {subsection}{\numberline {4.1}Napster}{6}
-\contentsline {subsubsection}{\numberline {4.1.1}Vantagens e Desvantagens}{6}
+\contentsline {subsubsection}{\numberline {4.1.1}Vantagens e Desvantagens}{7}
 \contentsline {subsection}{\numberline {4.2}Gnutella}{7}
 \contentsline {subsubsection}{\numberline {4.2.1}Mecanismo de Busca}{8}
 \contentsline {subsubsection}{\numberline {4.2.2}Vantagens e Desvantagens}{8}
@@ -20,6 +20,6 @@
 \contentsline {subsubsection}{\numberline {4.3.1}Funcionamento}{9}
 \contentsline {subsubsection}{\numberline {4.3.2}Sistema de Busca}{10}
 \contentsline {subsubsection}{\numberline {4.3.3}Vantagens e Desvantagens}{10}
-\contentsline {subsection}{\numberline {4.4}P2P Web}{11}
+\contentsline {subsection}{\numberline {4.4}P2P Web}{10}
 \contentsline {section}{\numberline {5}Considera\IeC {\c c}\IeC {\~o}es finais}{11}
 \contentsline {section}{Refer\^encias}{11}
