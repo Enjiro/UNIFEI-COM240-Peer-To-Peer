@@ -1,4 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{BitExploit}
+Florian Adamsky, Syed~Ali Khayam, Rudolf Jäger, and Muttukrishnan Rajarajan.
+\newblock P2p file-sharing in hell: Exploiting bittorrent vulnerabilities to
+  launch distributed reflective dos attacks.
 
 \bibitem{camarillop2parch}
 Gonzalo Camarillo.
@@ -10,6 +15,11 @@ Gonzalo Camarillo.
 Andrew~T. Campbell.
 \newblock \textit{Examples Peer-to-Peer Applications}.
 \newblock Departament of Computer Science - Darthmouth College.
+
+\bibitem{ACohenBAD}
+Adam Cohen.
+\newblock Is peer-to-peer inherently bad?
+\newblock 2015.
 
 \bibitem{CohenBIT}
 Bram Cohen.

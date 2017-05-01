@@ -78,7 +78,7 @@
 David Mateus Batista\\
 Gabriel Erzinger Dousseau\\
 Gabriel Augusto Alves Taets\\
-Mauricio Ferreira Leite\\
+Maurício Leite Ferreira\\
 \end{flushleft}
 \end{minipage}
 \begin{minipage}{0.4\textwidth}
@@ -115,11 +115,11 @@ suas vantagens, desvantagens, limitações e aplicações.
 \section{Fundamentação Teórica}
 \textit{Peer-to-Peer} significa, em tradução literal, "par a par". Em termos formais, os dispositivos da rede estão conectados por uma cadeia descentralizada, onde cada um possui funções equivalentes, sem hierarquias. Todos os usuários são clientes e servidores, funcionando de forma independente e livre da existência de um servidor central. A busca por um arquivo é enviada a todos os dispositivos da rede, os quais tomam conhecimentos dos outros usuários através de um hospedeiro (que apenas monitora pontos de presença na rede e não tem um banco de dados com nomes de usuários ou arquivos), que informa o IP dos usuários ativos na rede. O pedido é repassado para todos os usuários, que vão passando, usuário por usuário, até que o arquivo desejado seja encontrado.\cite{sisp2p}
 
-É preciso notar que P2P e arquiteturas centralizadas não são alternativas disjuntas. Existem muitos sistemas que podem ser classificados como uma mistura de um sistema P2P e um sistema centralizado. O problema é que não existe uma fronteira clara entre um paradigma P2P e outros paradigmas supostamete opostos como cliente-servidor. Nos extremos, algumas arquiteturas são claramente P2P enquanto outras são claramente cliente-servidor. No entanto, existem arquiteturas que podem ser consideradas uma ou outra ou ambos, dependendo da definição de P2P considerada. Consequentemente, é importante entender o que é comum a todas as definições de P2P e o que são traços não-comuns que alguns autores incluem em suas próprias definições.\cite{camarillop2parch}
+É preciso notar que P2P e arquiteturas centralizadas não são alternativas disjuntas. Existem muitos sistemas que podem ser classificados como uma mistura de um sistema P2P e um sistema centralizado. O problema é que não existe uma fronteira clara entre um paradigma P2P e outros paradigmas supostamente opostos como cliente-servidor. Nos extremos, algumas arquiteturas são claramente P2P enquanto outras são claramente cliente-servidor. No entanto, existem arquiteturas que podem ser consideradas uma ou outra ou ambos, dependendo da definição de P2P considerada. Consequentemente, é importante entender o que é comum a todas as definições de P2P e o que são traços não-comuns que alguns autores incluem em suas próprias definições.\cite{camarillop2parch}
 
-Considera-se um sistema P2P se os elementos que formam o sistema compartilham seus recursos com o propósito de prover o serviço que o sistema foi desenhado para prover. Os elementos no sistema tanto provêem os serviços aos outros elementos, como requisitam os serviços aos outros elementos. A princípio, todos os elementos no sistema devem satisfazer este critério para que o sistema seja considerado P2P. No entanto, na prática, o sistema pode ter algumas exceções (isto é, alguns nós que não satisfazem este critério) e ainda ser considerado P2P. Por exemplo, um sistema P2P pode ainda ser considerado P2P mesmo se tiver um servidor centralizado de registros. Por outro lado, alguns sistemas dividem \textit{endpoints} entre pares e clientes. Pares requisitam e oferecem serviços, enquanto clientes geralmente apenas requisitam serviços. Um sistema onde a maioria dos \textit{endpoints} se comportam como clientes não pode ser considerado estritamente P2P. \cite{camarillop2parch}
+Considera-se um sistema P2P se os elementos que formam o sistema compartilham seus recursos com o propósito de prover o serviço que o sistema foi desenhado para prover. Os elementos no sistema tanto proveem os serviços aos outros elementos, como requisitam os serviços aos outros elementos. A princípio, todos os elementos no sistema devem satisfazer este critério para que o sistema seja considerado P2P. No entanto, na prática, o sistema pode ter algumas exceções (isto é, alguns nós que não satisfazem este critério) e ainda ser considerado P2P. Por exemplo, um sistema P2P pode ainda ser considerado P2P mesmo se tiver um servidor centralizado de registros. Por outro lado, alguns sistemas dividem \textit{endpoints} entre pares e clientes. Pares requisitam e oferecem serviços, enquanto clientes geralmente apenas requisitam serviços. Um sistema onde a maioria dos \textit{endpoints} se comportam como clientes não pode ser considerado estritamente P2P. \cite{camarillop2parch}
 
-Alguns autores adicionam ainda que os elementos que formam os sistemas P2P (que não surpreendentemente são denonimados \textit{pares}), devem ser capazes de se comunicarem diretamente, sem passar por intermediários \cite{schollmeier2001}. Outros autores dizem que o sistema deve ser auto-organizável e ter controle decentralizado\cite{roussopoulos2004}.
+Alguns autores adicionam ainda que os elementos que formam os sistemas P2P (que não surpreendentemente são denominados \textit{pares}), devem ser capazes de se comunicarem diretamente, sem passar por intermediários \cite{schollmeier2001}. Outros autores dizem que o sistema deve ser auto-organizável e ter controle decentralizado\cite{roussopoulos2004}.
 
 É notável que as definições acima são dadas no contexto de um único serviço individual. Um serviço complexo pode ser composto de vários serviços individuais. Alguns desses serviços individuais pode consistir de serviços P2P e alguns deles podem consistir de serviços cliente-servidor. Por exemplo, um cliente de compartilhamento de arquivos pode incluir um cliente P2P para efetuar o compartilhamento em si, e um navegador \textit{web} para acessar informações adicionais num servidor \textit{web} centralizado. Adicionalmente, existem arquiteturas onde um sistema cliente-servidor pode servir como "estepe" para um serviço normalmente provido por um sistema P2P, ou vice-versa. \cite{camarillop2parch}
 
@@ -155,11 +155,11 @@ A imagem acima representa um esquema misto, onde existe um servidor centralizado
 \section{Aplicações}
 Como visto nas seções anteriores, a utilização da arquitetura \textbf{P2P} pode trazer diversas vantagens, desvantagens e outras características únicas para o aplicativo ( ou serviço ) que estará implementando-a. 
 
-Dessa forma, é importante analisar quais serviços utilizam essa arquitetura, como se beneficiam de suas vantagens e como lidam com suas desvantagens. Isto é, dissecar sobre como as caracteristicas da arquitetura P2P são tratadas em cada caso de uso.
+Dessa forma, é importante analisar quais serviços utilizam essa arquitetura, como se beneficiam de suas vantagens e como lidam com suas desvantagens. Isto é, dissecar sobre como as características da arquitetura P2P são tratadas em cada caso de uso.
 \subsection{Napster}
 O \textbf{Napster} foi uma das primeiras aplicações de compartilhamento de arquivos, elaborada em Junho de 1999. O serviço permitia apenas o compartilhamento de arquivos \textbf{MP3} e é um grande responsável pela popularidade do termo "P2P".
 
-A rede se basea num servidor central de indices. Os nós da rede registram uma lista dos arquivos que desejam compartilhar. Dessa forma, a busca é processada baseando-se em \textbf{palavras chave} e retornará uma lista com os arquivos encontrados e informações como a banda disponivel, tamanho e fonte. 
+A rede se baseia num servidor central de índices. Os nós da rede registram uma lista dos arquivos que desejam compartilhar. Dessa forma, a busca é processada baseando-se em \textbf{palavras chave} e retornará uma lista com os arquivos encontrados e informações como a banda disponível, tamanho e fonte. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -173,14 +173,14 @@ A imagem acima representa o funcionamento do protocolo Napster, indicando um cli
 \subsubsection{Vantagens e Desvantagens}
 Como um dos pioneiros na área, a principal vantagem do Napster se devia ao fato de ele possuir uma busca rápida e eficiente ( por se tratar apenas de uma consulta ao servidor central ). Além disso, oferecia uma visão simples e consistente da rede. 
 
-As desvantagens se devem exatamente a \textbf{presença de um servidor}, uma vez que, assim como em arquiteturas cliente-servidor, a central representa um ponto de falha único, que se fosse afetado, prejudicaria toda a rede. Por se tratar de um servidor que lida com diversas requisições, o servidor central também possuia um alto custo de manutenção.
+As desvantagens se devem exatamente a \textbf{presença de um servidor}, uma vez que, assim como em arquiteturas cliente-servidor, a central representa um ponto de falha único, que se fosse afetado, prejudicaria toda a rede. Por se tratar de um servidor que lida com diversas requisições, o servidor central também possuía um alto custo de manutenção.
 \subsection{Gnutella} %https://pdfs.semanticscholar.org/f0b5/86bda8901c2f3ae399b48239690028f69417.pdf
 %https://pt.slideshare.net/uschmidt/peertopeer-systems/7-P2P_Filesharing_The_most_popular
-Gnutella é um \textbf{protocolo de busca} aberto e descentralizado usado principalmente para o compartilhamento e a busca de arquivos. Foi criado com o objetivo de ser uma rede dinamica que permite que seus usúarios entrem e saiam a qualquer momento, tenha uma boa escalabilidade, garanta a anonimidade  e confiança em relação a ataques externos.\cite{gayatriGN}
+Gnutella é um \textbf{protocolo de busca} aberto e descentralizado usado principalmente para o compartilhamento e a busca de arquivos. Foi criado com o objetivo de ser uma rede dinamica que permite que seus usuários entrem e saiam a qualquer momento, tenha uma boa escalabilidade, garanta a anonimidade  e confiança em relação a ataques externos.\cite{gayatriGN}
 
 O termo Gnutella se refere a todo o grupo de computadores que possuem aplicativos carregados com o protocolo Gnutella que formam uma espécie de rede virtual. Cada nó nessa rede pode funcionar tanto como um cliente como quanto um servidor. 
 
-Dessa forma, eles podem criar e receber requisições com outros nós utilizando os dados que estarão em seu disco rígido. Como é sábido, tais requisições não são enviados para nenhum servidor central, elas são exclusivamente tratadas entre os nós da rede. 
+Dessa forma, eles podem criar e receber requisições com outros nós utilizando os dados que estarão em seu disco rígido. Como é sabido, tais requisições não são enviados para nenhum servidor central, elas são exclusivamente tratadas entre os nós da rede. 
 
 \begin{figure}[!h]
 \begin{center}
@@ -190,7 +190,7 @@ Dessa forma, eles podem criar e receber requisições com outros nós utilizando
 \end{figure}
 
 
-A imagem acima, representa um grupo de computadores utilizando aplicativos com o protocolo Gnutella. Na mesma, um computador realiza uma \textbf{query} buscando um arquivo nos nós da rede. Os computadores que possuirem tal arquivo, retornam um \textbf{Query hit} para que, em seguida, seja estabelecida uma conexão \textbf{HTTP} entre eles para a transmissão do arquivo. 
+A imagem acima, representa um grupo de computadores utilizando aplicativos com o protocolo Gnutella. Na mesma, um computador realiza uma \textbf{query} buscando um arquivo nos nós da rede. Os computadores que possuírem tal arquivo, retornam um \textbf{Query hit} para que, em seguida, seja estabelecida uma conexão \textbf{HTTP} entre eles para a transmissão do arquivo. 
 
 
 
@@ -199,11 +199,11 @@ O protocolo utiliza o algoritmo padrão conhecido como BFS( \textbf{B}readth \te
 \begin{itemize}
 	\item O nó inicialmente busca um arquivo e envia a mensagem de busca a seus vizinhos
 	\item Os vizinhos encaminham a mensagem para todos os seus vizinhos
-	\item Os Nós que possuirem o arquivo que está sendo requisitado, começam uma mensagem de resposta
-	item Após a mensagem de resposta atingir o nó origem, o download do arquivo começa.
+	\item Os Nós que possuírem o arquivo que está sendo requisitado, começam uma mensagem de resposta
+	item. Após a mensagem de resposta atingir o nó origem, o download do arquivo começa.
 \end{itemize}
 \subsubsection{Vantagens e Desvantagens}
-O protocolo GNutella apresenta algumas modificações que \textbf{superam} as desvantagens do Napster, como por exemplo: não depender de um servidor para indexar os arquivos, dessa forma, não se cria um "único ponto de falha" na arquitetura. Entretanto, este mesmo fato causa uma das suas principais desvantagens: a busca em largura acaba por adicionar um certo periodo de tempo bem maior do que se fosse utilizado um servidor.
+O protocolo GNutella apresenta algumas modificações que \textbf{superam} as desvantagens do Napster, como por exemplo: não depender de um servidor para indexar os arquivos, dessa forma, não se cria um "único ponto de falha" na arquitetura. Entretanto, este mesmo fato causa uma das suas principais desvantagens: a busca em largura acaba por adicionar um certo período de tempo bem maior do que se fosse utilizado um servidor.
 
 Além disso, outros pontos de falha do protocolo Gnutella são: o fato de que metade dos arquivos são servidos por apenas 1 porcento dos usuário , além da perca de banda larga e segurança em relação a transmissão de arquivos mascarados.\cite{gayatriGN}
 
@@ -235,11 +235,31 @@ Além disso, a velocidade de download por sistemas como o BitTorrent costuma ser
 
 Surge também uma problemática relacionada aos sites que armazenam os arquivos $.torrent$, uma vez que grande parte destes sites são responsáveis pela pirataria de diversos programas, músicas, filmes e outras mídias, aproveitando-se da $semi-anonimidade$ oferecida pelos sistemas de torrent. Entretanto, não é uma desvantagem que concerne ao sistema BitTorrent em sí mas que o acaba afetando.
 
-Os maiores desafios para aplicações como o BitTorrent continuam sendo os mesmos nos ultimos tempos: aumentar o incentivo para que usuários se comportem como sementes após a finalização do download do arquivo para que a rede se torne maior e mais consistente,  e otimizar a largura de banda dos trackers, para que os pares se encontrem mais rapidamnete.
+Os maiores desafios para aplicações como o BitTorrent continuam sendo os mesmos nos ultimos tempos: aumentar o incentivo para que usuários se comportem como sementes após a finalização do download do arquivo para que a rede se torne maior e mais consistente,  e otimizar a largura de banda dos trackers, para que os pares se encontrem mais rapidamente.
 
 \newpage
 
 \section{Discussão}
+Na seção anterior foi explicado sobre alguns exemplos de aplicações que utilizam a arquitetura P2P, e suas vantagens e desvantagens particulares, faremos agora uma analise mais geral sobre a arquitetura em sí, com suas principais vantagens e desvantagens.
+
+\subsection{Vantagens}
+As vantagens obtidas ao se utilizar uma arquitetura P2P abrangem desde não existe a necessidade de um servidor dedicado, o custo total para se construir e fazer a manutenção necessária para este tipo de rede é bem menor, até a existência de uma dependência central, a arquitetura P2P é mais confiável, pois a queda de um par não afeta diretamente os outros pares.
+\subsubsection{Auto-Escalabilidade}
+A rede cresce de acordo com o aumento dos provedores e consumidores inseridos nela, um alto numero de somente provedores ou consumidores na rede não traz vantagem nenhuma a mesma, visto que com um alto numero somente de consumidores haverá um gargalo pelo qual os provedores não serão capazes de atender, já com um aumento somente nos provedores a rede haverá um aumento no custo para um esforço aparentemente sem utilidade.\cite{ACohenBAD}
+\subsubsection{Auto-Organização}
+Com a inserção de um novo par na rede, requer uma mínima ou quase nenhuma configuração para ela começar a se comunicar com os outros pares já presentes na rede,\cite{ACohenBAD}
+\subsubsection{Tolerância a falhas} 
+Servidores centrais são alvos de ataques de hackers com uma alta frequência, como eles aderem a um modelo em que todos os dados estão centralizados em um centro de dados central. No caso de um evento (cyberataque ou desastre natural) que traga o servidor a ter um mal funcionamento, os usuários não teriam mais acesso aos dados dos provedores. Já, observando esses eventos em uma rede P2P, após o "provedor" presente na rede cair (sendo o provedor um dos pares presentes na rede), os dados buscados na rede continuariam sendo acessíveis a partir de outro par, visto que nenhum nó na rede é crítico para que ela continue operando.\cite{ACohenBAD}
+
+\subsection{Desvantagens}
+Observando as vantagens apresentadas anteriormente, temos algumas consequências que podem afetar tanto a segurança do usuário, como a do dado presente na rede.
+\subsubsection{Integridade dos Dados}
+Através de um modelo P2P, existem inúmeras ocasiões em que os dados são filtrados, já que não existe um administrador central para essa arquitetura. Isso ocorre também com dados nocivos como modelos 3D de munições e armas. O mais comum é isso ocorrer com dados que violam os direitos autorias de multimídia. Esses exemplos abrangem os casos em que os dados realmente contém as informações que são marcados. Um outro problema é quando os dados são intencionalmente mal rotulados por um dos pares, por exemplo um dos pares substitui os dados que um consumidor estava buscando por um vírus, mas mantém o rótulo dos dados buscados, causando assim o descarregamento de um vírus no consumidor.
+\subsubsection{Desaparecimento da Rede}
+Como a transmissão de arquivos ficam somente para os pares na rede, quando um par é o único na rede a possuir um arquivo e ele não está mais presente na mesma, existe uma defasagem do arquivo necessitado, e caso o par não volte a rede, o arquivo em questão pode não ser mais encontrado quando solicitado futuramente.
+\subsection{Exploit no BitTorrent}
+Um dos mais populares protocolos P2P para compartilhamento de arquivos possui um exploit no qual se pode lançar um ataque DRDoS, visto que o BitTorrent faz uso do protocolo UDP, o qual não inclui mecanismos para evitar a falsificação do endereço de origem IP.\cite{BitExploit}
+
 \newpage
 
 \section{Considerações finais}
