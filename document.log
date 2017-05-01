@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.28)  1 MAY 2017 03:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.1)  1 MAY 2017 13:52
 entering extended mode
 **./document.tex
 (document.tex
-LaTeX2e <2017/01/01> patch level 1
+LaTeX2e <2017-04-15>
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -27,14 +27,14 @@ Package: babel 2016/04/23 3.9r The Babel package
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-portuges\portuges.ldf"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-portuges\portuges.ld
+f
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
@@ -48,14 +48,14 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@posthook=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -267,6 +267,8 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
    defining Unicode char U+1E02 (decimal 7682)
    defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
@@ -287,12 +289,14 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -333,7 +337,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -357,10 +361,10 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2017/01/24 v2.0c Standard LaTeX file
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )) (sbc-template.sty
 Package: sbc-template 2001/06/09
@@ -373,7 +377,7 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -408,7 +412,7 @@ Package: times 2005/04/12 PSNFSS-v9.2a (SPQR)
 )
 \c@instn=\count91
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip43
@@ -420,14 +424,14 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen119
 \titlewidthfirst=\dimen120
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\datetime\datetime.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count92
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fmtcount.sty
 Package: fmtcount 2015/05/05 v3.01
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -444,14 +448,13 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@depth=\count93
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcprefix.sty
 Package: fcprefix 2012/09/28
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fcnumparser.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcnumparser.sty
 Package: fcnumparser 2012/09/28
 \fc@digit@counter=\count94
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
 \ex@=\dimen121
@@ -459,7 +462,7 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 \c@padzeroesN=\count95
 \fc@tmpcatcode=\count96
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\fmtcount\fc-portuges.def"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-portuges.def
 File: fc-portuges.def 2014/06/09
 )
 \@DT@modctr=\count97
@@ -470,7 +473,8 @@ File: fc-portuges.def 2014/06/09
 \@DT@loopN=\count102
 \@DT@X=\count103
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\datetime\datetime-defaults.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\datetime-defaults
+.sty
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count104
@@ -493,12 +497,11 @@ put line 308.
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks22
 \dt@b=\toks23
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -550,24 +553,25 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@dima=\skip46
 \bigstrutjot=\dimen124
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\tocbibind\tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
 
 
 Package tocbibind Note: Using section or other style headings.
 
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+) (C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
 \@float@every@program=\toks26
 \c@program=\count122
- (document.aux
+
+(document.aux
 
 LaTeX Warning: Label `figure1' multiply defined.
 
@@ -624,7 +628,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\DaviD\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
 \scratchdimen=\dimen125
@@ -638,7 +642,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \makeMPintoPDFobject=\count128
 \everyMPtoPDFconversion=\toks28
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
@@ -692,7 +696,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 83.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/DaviD/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <13> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 101.
  [1] (document.toc
@@ -702,81 +706,90 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 \tf@toc=\write3
 \openout3 = `document.toc'.
 
- [1] [1] [2]
-<img//cliente-servidor.png, id=20, 324.46219pt x 310.91156pt>
+ [1]
+[1] <img//cliente-servidor.png, id=17, 324.46219pt x 310.91156pt>
 File: img//cliente-servidor.png Graphic file (type png)
 
 <use img//cliente-servidor.png>
-Package pdftex.def Info: img//cliente-servidor.png used on input line 131.
+Package pdftex.def Info: img//cliente-servidor.png used on input line 128.
 (pdftex.def)             Requested size: 324.46138pt x 310.91078pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 132.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 129.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 132.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 129.
 
-<img//p2p.png, id=22, 232.61906pt x 237.88875pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./img//cliente-servidor.png>] <img//p2p.png, id=24, 232.61906pt x 237.8887
+5pt>
 File: img//p2p.png Graphic file (type png)
- <use img//p2p.png>
-Package pdftex.def Info: img//p2p.png used on input line 139.
+
+<use img//p2p.png>
+Package pdftex.def Info: img//p2p.png used on input line 136.
 (pdftex.def)             Requested size: 232.61848pt x 237.88815pt.
-
-Underfull \vbox (badness 2790) has occurred while \output is active []
-
- [3 <./img//cliente-servidor.png>] <img//misto.png, id=28, 272.51813pt x 272.51
-813pt>
+ <img//misto.png, id=25, 272.51813pt x 272.51813pt>
 File: img//misto.png Graphic file (type png)
 
 <use img//misto.png>
-Package pdftex.def Info: img//misto.png used on input line 147.
+Package pdftex.def Info: img//misto.png used on input line 144.
 (pdftex.def)             Requested size: 272.51746pt x 272.51746pt.
- [4 <./img//p2p.png> <./img//misto.png>]
-<img//ilustracaoiot.png, id=34, 401.5pt x 301.125pt>
+
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+ [3 <./img//p2p.png> <./img//misto.png>]
+<img//ilustracaoiot.png, id=30, 401.5pt x 301.125pt>
 File: img//ilustracaoiot.png Graphic file (type png)
 
 <use img//ilustracaoiot.png>
-Package pdftex.def Info: img//ilustracaoiot.png used on input line 166.
+Package pdftex.def Info: img//ilustracaoiot.png used on input line 162.
 (pdftex.def)             Requested size: 401.49901pt x 301.12425pt.
- [5 <./img//ilustracaoiot.png>]
-<img//gnuquery.JPG, id=39, 198.7425pt x 172.84575pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] <img//gnuquery.JPG, id=35, 198.7425pt x 172.84575pt>
 File: img//gnuquery.JPG Graphic file (type jpg)
- <use img//gnuquery.JPG>
-Package pdftex.def Info: img//gnuquery.JPG used on input line 187.
+
+<use img//gnuquery.JPG>
+Package pdftex.def Info: img//gnuquery.JPG used on input line 184.
 (pdftex.def)             Requested size: 198.742pt x 172.8453pt.
 
-[6 <./img//gnuquery.JPG>]
-Overfull \hbox (3.03546pt too wide) in paragraph at lines 198--199
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (3.03546pt too wide) in paragraph at lines 192--193
 []\T1/ptm/m/n/12 O pro-to-colo uti-liza o al-go-ritmo pa-drão co-nhe-cido como 
 BFS( \T1/ptm/b/n/12 B\T1/ptm/m/n/12 readth \T1/ptm/b/n/12 F\T1/ptm/m/n/12 irst 
 \T1/ptm/b/n/12 S\T1/ptm/m/n/12 earch)
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 200.
+[5 <./img//ilustracaoiot.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 194.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
- [7]
-Underfull \vbox (badness 1939) has occurred while \output is active []
-
- [8]
-[9] [10] [11] [12] (document.bbl) [13] (document.aux)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
+ [6 <./img//gnuquery.JPG>] [7] [8] [9] [10] (document.bbl [11]) [12] (document.
+aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5433 strings out of 493333
- 72050 string characters out of 3139185
- 160761 words of memory out of 3000000
- 8795 multiletter control sequences out of 15000+200000
+ 5439 strings out of 493328
+ 72601 string characters out of 3139125
+ 160972 words of memory out of 3000000
+ 8805 multiletter control sequences out of 15000+200000
  44027 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,5n,37p,1034b,282s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,5n,37p,1034b,280s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
@@ -784,9 +797,9 @@ e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
 elvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (16 pages, 283927 bytes).
+Output written on document.pdf (15 pages, 286214 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
